@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #EEEDE7;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 3rem;
+}
+
+.logo-title {
+    text-align: center;
+}
+
+.logo-title img {
+    width: 7rem;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.parallax {
+    /* The image used */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/home-bg.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
