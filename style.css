@@ -11,11 +11,24 @@
     --clr-accent: #dd9000;
     --bg-light: #EEEDE7;
     --clr-green: #90cc36;
+
+    --fs-h1: 2rem;
+    --fs-h2: 1.7rem;
+    --fs-body: 1rem;
+}
+
+@media (max-width: 430px) {
+    :root {
+        --fs-h1: 1.7rem;
+        --fs-h2: 1.4rem;
+        --fs-body: 0.8rem;
+    }
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--clr-dark);
+    font-size: var(--fs-body);
 }
 
 .header {
@@ -35,7 +48,7 @@ body {
 }
 
 .logo-title h1 {
-    font-size: 2rem;
+    font-size: var(--fs-h1);
     margin: 0;
 }
 
@@ -55,7 +68,7 @@ body {
 
 .nav ul li {
     list-style-type: none;
-    margin-left: 1rem;
+    padding: .3rem .7rem;
 }
 
 .nav ul li a {
@@ -72,7 +85,7 @@ body {
     .header {
         background: var(--bg-light);
         display: flex;
-        align-items: center;
+        justify-content: center;
         padding: 0rem 3rem;
     }
 
@@ -86,8 +99,8 @@ body {
         text-align: center;
     }
 
-    .nav ul li a {
-        font-size: 0.8rem;
+    .nav ul li {
+        padding: 1rem;
     }
 
 }
