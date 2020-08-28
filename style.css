@@ -134,7 +134,27 @@ body {
     display: none; 
 }
 
-@media (max-width: 430px) {
+.arrow-up {
+    margin-left: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px var(--clr-light) solid;
+    border-left: 3px var(--clr-light) solid;
+    border-radius: 20%;
+    transform: rotate(135deg);
+}
+
+.arrow-down {
+    margin-left: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px var(--clr-light) solid;
+    border-left: 3px var(--clr-light) solid;
+    border-radius: 20%;
+    transform: rotate(315deg);
+}
+
+@media (max-width: 460px) {
     .header {
         background: var(--bg-light);
         display: flex;
@@ -143,7 +163,8 @@ body {
     }
 
     .nav {
-        position: relative;
+        position: sticky;
+        top: 52px;
         justify-content: center;
     }
 
@@ -165,7 +186,9 @@ body {
     }
 
     .menu {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: none;
         background: var(--clr-dark);
         width: 100%;
@@ -174,6 +197,10 @@ body {
         font-family: 'Poppins', sans-serif;
         position: sticky;
         top: 0;
+    }
+
+    .menu i {
+        margin-left: 0.3rem;
     }
 }
 

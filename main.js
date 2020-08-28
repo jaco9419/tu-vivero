@@ -1,14 +1,11 @@
 const menu = document.querySelector(".menu");
 const navToggle = document.querySelector(".nav");
-//const navLinks = document.querySelectorAll(".nav__link");
+const arrowUp = document.querySelector(".arrow-up");
+const arrowDown = document.querySelector(".arrow-down");
 
 menu.addEventListener("click", () => {
-  navToggle.classList.add("open");
+  navToggle.classList.toggle("open");
+  arrowUp.classList.toggle("open");
+  arrowDown.classList.toggle("close");
 });
 
-
-// navLinks.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     document.body.classList.remove("nav-open");
-//   });
-// });
