@@ -9,7 +9,7 @@
     --clr-dark: #0e0e0e;
     --clr-light: #f0f0f0;
     --clr-accent: #dd9000;
-    --bg-light: #EEEDE7;
+    --bg-light: #eeede7;
     --clr-green: #90cc36;
 
     --fs-h1: 2rem;
@@ -62,23 +62,72 @@ body {
     justify-content: flex-end;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
 }
 
 .nav ul li {
     list-style-type: none;
-    padding: .3rem .7rem;
+    padding: 0.1rem 0.4rem;
 }
 
-.nav ul li a {
+.hover {
     text-decoration: none;
     color: var(--clr-light);
-    transition: .3s;
+    border: 0;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
+    transition: color 0.25s;
+    padding: 0.5rem;
 }
 
-.nav ul li a:hover {
+.hover::before,
+.hover::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.hover::before {
+    top: 0;
+    left: 0;
+}
+
+/* // And this the bottom & left borders (expands left, then up) */
+.hover::after {
+    bottom: 0;
+    right: 0;
+}
+
+.hover:hover {
     color: var(--clr-green);
+}
+
+/* // Hover styles */
+.hover:hover::before,
+.hover:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.hover:hover::before {
+    border-top-color: var(--clr-green);
+    border-right-color: var(--clr-green);
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.hover:hover::after {
+    border-bottom-color: var(--clr-green);
+    border-left-color: var(--clr-green);
+    transition: border-color 0s ease-out 0.5s, 
+                width 0.25s ease-out 0.5s,
+                height 0.25s ease-out 0.75s;
 }
 
 @media (max-width: 430px) {
@@ -93,8 +142,8 @@ body {
         position: relative;
         justify-content: center;
     }
-    
-    .nav ul{
+
+    .nav ul {
         flex-direction: column;
         text-align: center;
     }
@@ -102,23 +151,23 @@ body {
     .nav ul li {
         padding: 1rem;
     }
-
 }
 
 .parallax {
     /* The image used */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/home-bg.jpg");
-  
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('img/home-bg.jpg');
+
     /* Set a specific height */
     height: 500px;
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  .about {
-      height: 100vh;
-  }
+.about {
+    height: 100vh;
+}
