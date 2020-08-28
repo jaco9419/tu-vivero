@@ -1,11 +1,10 @@
 const menu = document.querySelector(".menu");
 const navToggle = document.querySelector(".nav");
-const arrowUp = document.querySelector(".arrow-up");
-const arrowDown = document.querySelector(".arrow-down");
+const arrow = document.querySelector(".arrow");
 
 menu.addEventListener("click", () => {
+    arrow.classList.add("move-down");
   navToggle.classList.toggle("open");
-  arrowUp.classList.toggle("open");
-  arrowDown.classList.toggle("close");
+  arrow.classList.toggle("move-up");
 });
 

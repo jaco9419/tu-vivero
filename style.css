@@ -73,6 +73,8 @@ body {
     padding: 0.1rem 0.4rem;
 }
 
+/* Start Border Hovering */
+
 .hover {
     text-decoration: none;
     color: var(--clr-light);
@@ -130,29 +132,52 @@ body {
                 height 0.25s ease-out 0.75s;
 }
 
+/* End Border Hovering */
+
+/* Start menu and arrow toggling for smaller screens */
+
 .menu {
     display: none; 
+    font-size: var(--fs-body);
 }
 
-.arrow-up {
+.arrow {
     margin-left: 0.5rem;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-bottom: 3px var(--clr-light) solid;
     border-left: 3px var(--clr-light) solid;
-    border-radius: 20%;
-    transform: rotate(135deg);
-}
-
-.arrow-down {
-    margin-left: 0.5rem;
-    width: 10px;
-    height: 10px;
-    border-bottom: 3px var(--clr-light) solid;
-    border-left: 3px var(--clr-light) solid;
-    border-radius: 20%;
+    border-radius: 30%;
     transform: rotate(315deg);
 }
+
+.move-down {
+    animation: down 0.3s linear forwards;
+}
+
+@keyframes down {
+    0% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(315deg);
+    }
+}
+
+.move-up {
+    animation: up 0.3s linear forwards;
+}
+
+@keyframes up {
+    0% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+/* End menu and arrow toggling for smaller screens */
 
 @media (max-width: 460px) {
     .header {
