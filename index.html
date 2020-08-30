@@ -8,9 +8,9 @@
     <script src="https://kit.fontawesome.com/f16558b854.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo-title">
-            <a href="index.html">
+            <a href="index.html#header">
                 <img src="./img/logo.png" alt="logo">
             </a>
             <h1>Tu Vivero</h1>
@@ -27,10 +27,10 @@
     <nav class="nav close">
         <ul>
             <li>
-                <a href="index.html" class="hover" >Home</a>
+                <a href="index.html#header" class="hover" >Home</a>
             </li>
             <li>
-                <a href="index.html#about-us" class="hover" >Sobre Tu Vivero</a>
+                <a href="index.html#about" class="hover" >Sobre Tu Vivero</a>
             </li>
             <li>
                 <a href="contacto.html" class="hover" >Contacto</a>
@@ -42,7 +42,7 @@
     </nav>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="parallax"></div>
             <div class="motto">
                 <span class="motto-bg">
@@ -54,7 +54,21 @@
                 </span>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
+            <div class="info-container">
+                <div class="info">
+                    <p>Una planta para un hogar más verde y con vida.</p>
+                    <i class="fas fa-leaf fa-2x"></i>
+                </div>
+                <div class="info">
+                    <p>Plantas hechas con amor para tu ambiente.</p>
+                    <i class="fas fa-heart fa-2x"></i>
+                </div>
+                <div class="info">
+                    <p>Pensamos en vos y en tu bolsillo.</p>
+                    <i class="fas fa-dollar-sign fa-2x"></i>
+                </div>
+            </div>
             
         </section>
     </main>
