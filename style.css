@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@900&display=swap');
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@
     :root {
         --fs-h1: 1.7rem;
         --fs-h2: 1.4rem;
-        --fs-body: 0.8rem;
+        --fs-body: 0.9rem;
     }
 }
 
@@ -29,10 +30,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--clr-dark);
     font-size: var(--fs-body);
+    background: var(--bg-light);
 }
 
 .header {
-    background: var(--bg-light);
     display: flex;
     align-items: flex-end;
     padding: 0rem 3rem;
@@ -62,6 +63,7 @@ body {
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
+    z-index: 100;
 }
 
 .nav ul {
@@ -139,6 +141,7 @@ body {
 .menu {
     display: none; 
     font-size: var(--fs-body);
+    z-index: 99;
 }
 
 .arrow {
@@ -242,6 +245,33 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.motto {
+    position: absolute;
+    top: 50%;
+    width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--clr-light);
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75),
+    inset 0px 0px 53px 0px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 620px) {
+    .motto {
+        width: 87vw;
+    }
+}
+
+.quotes {
+    font-size: 2.5rem;
+    font-family: 'Passion One', cursive;
+    color: var(--clr-green);
 }
 
 .about {
