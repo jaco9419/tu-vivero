@@ -409,11 +409,47 @@ body {
     -moz-box-shadow: var(--bs-green);
     box-shadow: var(--bs-green);
     cursor: pointer;
-}
+    transition: .3s;}
 
 .submit:hover {
     background: var(--clr-accent);
     -webkit-box-shadow: var(--bs-accent);
     -moz-box-shadow: var(--bs-accent);
     box-shadow: var(--bs-accent);
+}
+
+/* Sucursales */
+
+.sucursales {
+    padding: 1rem;
+}
+
+.sucursales h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: var(--fs-h2);
+}
+
+.sucursales-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sucursal-title {
+    font-size: var(--fs-h3);
+    text-align: center;
+    margin: 1rem;
+}
+
+@media (max-width: 900px) {
+    .sucursales-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        flex-direction: column;
+    }
 }

@@ -1,57 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucursales</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f16558b854.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header" id="header">
-        <div class="logo-title">
-            <a href="index.html#header">
-                <img src="./img/logo.png" alt="logo">
-            </a>
-            <h1>Tu Vivero</h1>
-        </div>
-        
-        
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sucursales</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/f16558b854.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="logo-title">
+                <a href="index.html#header">
+                    <img src="./img/logo.png" alt="logo" />
+                </a>
+                <h1>Tu Vivero</h1>
+            </div>
+        </header>
 
-    <button class="menu" aria-label="toggle navigation">
-        Menú
-        <div class="arrow"></div> 
-      </button>
+        <button class="menu" aria-label="toggle navigation">
+            Menú
+            <div class="arrow"></div>
+        </button>
 
-    <nav class="nav close">
-        <ul>
-            <li>
-                <a href="index.html#header" class="hover" >Home</a>
-            </li>
-            <li>
-                <a href="index.html#about" class="hover" >Sobre Tu Vivero</a>
-            </li>
-            <li>
-                <a href="contacto.html" class="hover" >Contacto</a>
-            </li>
-            <li>
-                <a href="sucursales.html" class="hover" >Sucursales</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="nav close">
+            <ul>
+                <li>
+                    <a href="index.html#header" class="hover">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#about" class="hover">Sobre Tu Vivero</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="hover">Contacto</a>
+                </li>
+                <li>
+                    <a href="sucursales.html" class="hover">Sucursales</a>
+                </li>
+            </ul>
+        </nav>
 
-    <main>
-        <section class="sucursales" id="sucursales">
-            
-        </section>
-    </main>
+        <main>
+            <section class="sucursales" id="sucursales">
+                <h2>Visita nuestras distintas sucursales en CABA:</h2>
+                
+                <div class="sucursales-container">
+                    <div class="sucursal">
+                        <h3 class="sucursal-title">Palermo</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105086.77094668707!2d-58.48721756678066!3d-34.60513271280478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a682d57070d4e31!2sVivero%20Palermo!5e0!3m2!1sen!2sar!4v1598876028659!5m2!1sen!2sar"
+                            width="300"
+                            height="300"
+                            frameborder="0"
+                            style="border: 0"
+                            allowfullscreen
+                            aria-hidden="false"
+                            tabindex="0"
+                        ></iframe>
+                    </div>
+                    <div class="sucursal">
+                        <h3 class="sucursal-title">Caballito</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.853371832014!2d-58.449666695469546!3d-34.61772955352311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ef36fbacb1960d2!2sEl%20vivero%20buen%20pastor!5e0!3m2!1sen!2sar!4v1598876194631!5m2!1sen!2sar"
+                            width="300"
+                            height="300"
+                            frameborder="0"
+                            style="border: 0"
+                            allowfullscreen
+                            aria-hidden="false"
+                            tabindex="0"
+                        ></iframe>
+                    </div>
+                    <div class="sucursal">
+                        <h3 class="sucursal-title">Recoleta</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.366153570363!2d-58.40555032464729!3d-34.59552413110175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3144dd3cbf16b1ad!2sMaranta%20Plantas%20-%20Vivero!5e0!3m2!1sen!2sar!4v1598876253637!5m2!1sen!2sar"
+                            width="300"
+                            height="300"
+                            frameborder="0"
+                            style="border: 0"
+                            allowfullscreen
+                            aria-hidden="false"
+                            tabindex="0"
+                        ></iframe>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
 
-    <footer class="footer">
-        <a href="https://jaco9419.github.io/Portfolio/" class="hover" target="_blank">Jorge Caceres &copy</a>
-        <a href="https://github.com/jaco9419" class="hover" target="_blank"><i class="fab fa-github"></i></a>
-    </footer>
+        <footer class="footer">
+            <a
+                href="https://jaco9419.github.io/Portfolio/"
+                class="hover"
+                target="_blank"
+                >Jorge Caceres &copy</a
+            >
+            <a href="https://github.com/jaco9419" class="hover" target="_blank"
+                ><i class="fab fa-github"></i
+            ></a>
+        </footer>
 
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>
