@@ -28,7 +28,7 @@ html {
     :root {
         --fs-h1: 1.7rem;
         --fs-h2: 1.4rem;
-        --fs-h3: 1rem;
+        --fs-h3: 1.2rem;
         --fs-body: 0.9rem;
     }
 }
@@ -275,6 +275,8 @@ body {
     }
 }
 
+/* About */
+
 .quotes {
     font-size: 2.5rem;
     font-family: 'Passion One', cursive;
@@ -284,9 +286,8 @@ body {
 .info-container {
     display: flex;
     max-width: 1000px;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 250px;
+    margin: 5rem auto;
     padding: 4rem;
 }
 
@@ -294,34 +295,57 @@ body {
     width: 100%;
     height: 100%;
     background: var(--clr-green);
-    border: 1px black solid;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 2rem 1rem;
     text-align: center;
     font-size: var(--fs-h3);
+    -webkit-box-shadow: 20px 20px 0px -2px rgba(9,46,9,1);
+    -moz-box-shadow: 20px 20px 0px -2px rgba(9,46,9,1);
+    box-shadow: 20px 20px 0px -2px rgba(9,46,9,1);
 }
 
 .info + .info {
     margin-left: 2rem;
 }
 
+.info p, .info i {
+    padding: 2rem;
+}
+
 @media (max-width: 800px) {
+    .about {
+        height: 150vh;
+    }
+
     .info-container {
         display: flex;
-        max-width: 400px;
+        max-width: 300px;
         min-height: 400px;
-        padding: 2rem;
+        padding: 0;
         flex-direction: column;
     }
     
     .info {
         flex-direction: column;
-        margin: 0;
+        margin: 0 0 4rem 0;
     }
 
     .info + .info {
         margin-left: 0;
     }
+}
+
+/* Footer */
+
+.footer {
+    background: var(--clr-dark);
+    padding: 1rem;
+    text-align: right;
+}
+
+.footer a {
+    color: var(--clr-light);
+    margin: 0 .5rem;
+    text-decoration: none;
 }
