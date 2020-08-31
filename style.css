@@ -371,11 +371,6 @@ body {
     text-decoration: underline;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--clr-light);
-    opacity: 1; /* Firefox */
-  }
-
 .form {
     width: 50%;
     padding: 2rem;
