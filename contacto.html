@@ -43,7 +43,28 @@
 
     <main>
         <section class="contacto" id="contacto">
-            
+
+            <div class="consultas">
+                <a href="mailto:jaco.9419@gmail.com"><i class="fas fa-envelope"></i> Mail para consultas</a>
+            </div>
+
+            <form action="show_data.html" class="form">
+
+                <label for="first-name">First Name: </label>
+                <input type="text" name="first-name" id="first-name" class="contact-input" required placeholder="John">
+
+                <label for="last-name">Last Name: </label>
+                <input type="text" name="last-name" id="last-name" class="contact-input" required placeholder="Doe">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="contact-input" required placeholder="johndoe@example.com"> 
+                
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="" cols="30" rows="10" class="contact-input"></textarea>
+
+                <input type="submit" class="submit">
+            </form>
+
         </section>
     </main>
 
