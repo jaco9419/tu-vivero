@@ -67,22 +67,23 @@ body {
 
 /* Nav Bar */
 
-.nav {
+.nav-custom {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: var(--clr-dark);
     padding: 1rem;
+    padding-bottom: 0rem;
     display: flex;
     justify-content: flex-end;
     z-index: 100;
 }
 
-.nav ul {
+.nav-custom ul {
     display: flex;
 }
 
-.nav ul li {
+.nav-custom ul li {
     list-style-type: none;
     padding: 0.1rem 0.4rem;
 }
@@ -90,7 +91,7 @@ body {
 /* Start Border Hovering */
 
 .hover {
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--clr-light);
     border: 0;
     box-sizing: border-box;
@@ -150,7 +151,7 @@ body {
 
 /* Start menu and arrow toggling for smaller screens */
 
-.menu {
+.menu-js {
     display: none; 
     font-size: var(--fs-body);
     z-index: 99;
@@ -202,30 +203,31 @@ body {
         padding: 0rem 3rem;
     }
 
-    .nav {
+    .nav-custom {
         position: sticky;
         top: 52px;
         justify-content: center;
+        padding-bottom: 1rem;
     }
 
-    .nav ul {
+    .nav-custom ul {
         flex-direction: column;
         text-align: center;
     }
 
-    .nav ul li {
+    .nav-custom ul li {
         padding: 1rem;
     }
 
-    .close {
+    .close-js {
         display: none;
     }
 
-    .open {
+    .open-js {
         display: block;
     }
 
-    .menu {
+    .menu-js {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -239,7 +241,7 @@ body {
         top: 0;
     }
 
-    .menu i {
+    .menu-js i {
         margin-left: 0.3rem;
     }
 }
