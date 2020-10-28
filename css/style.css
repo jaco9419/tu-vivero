@@ -249,7 +249,7 @@ body {
 .parallax {
     /* The image used */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('img/home-bg.jpg');
+        url('../img/home-bg.jpg');
 
     /* Set a specific height */
     height: 500px;

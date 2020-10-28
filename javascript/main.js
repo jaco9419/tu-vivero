@@ -15,7 +15,7 @@ const home = document.querySelector('#home');
 const headerInner = `
         <div class="logo-title">
             <a href="${home ? '' : 'index.html'}#header">
-                <img src="./img/logo.png" alt="logo">
+                <img src="../img/logo.png" alt="logo">
             </a>
             <h1>Tu Vivero</h1>
         </div>
