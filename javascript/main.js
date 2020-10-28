@@ -1,3 +1,5 @@
+import { products } from './data.js';
+
 const menu = document.querySelector(".menu-js");
 const navToggle = document.querySelector(".nav-custom");
 const arrow = document.querySelector(".arrow");
@@ -30,7 +32,7 @@ const navInner = `
                 <a href="${home ? '' : '../index.html'}#about" class="hover" >Sobre Tu Vivero</a>
             </li>
             <li>
-                <a href="${home ? '/html/' : ''}productos.html" class="hover" >Productos</a>
+                <a href="${home ? '/html/' : ''}productos.html#products" class="hover" >Productos</a>
             </li>
             <li>
                 <a href="${home ? '/html/' : ''}contacto.html" class="hover" >Contacto</a>
@@ -54,3 +56,28 @@ nav.innerHTML = navInner;
 
 const footer = document.querySelector('.footer');
 footer.innerHTML = footerInner;
+
+//Handle data for Products
+
+const productsSection = document.querySelector('#products');
+
+products.map(product => {
+    let productInner = '';
+
+    productInner += `
+          <a href="${product.url}" class="product-url" target="_blank">
+            <div class="product-item hover">
+              <div class="image-container">
+                <img src="${product.src}.webp" alt="Product Image: ${product.name}" class="product-image">
+              </div>
+              <div class="product-description">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">$${product.price}</p>
+              </div>
+            </div>
+          </a>
+    `;
+
+    productsSection.innerHTML += productInner;
+    return productsSection;
+})
