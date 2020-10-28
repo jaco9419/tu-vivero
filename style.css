@@ -358,17 +358,28 @@ body {
 /* Products */
 
 
+.carousel-item {
+    height: 80vh;
+}
 
-.carousel-image-container {
-    height: 100%;
-    width: 100vw;
+.carousel-caption{
+    margin-bottom: 15%;
 }
 
 .carousel-image {
-    width: 100%;
-    margin: auto;
+    
+    height: 100%;
+    min-width: 100%;
     object-fit: cover;
+    filter: brightness(40%);
 }
+
+@media (max-width: 600px) {
+    .carousel-caption{
+        margin-bottom: 50%;
+    }
+}
+
 /* contact */
 
 .consultas {
